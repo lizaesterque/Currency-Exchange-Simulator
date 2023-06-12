@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="477.0" prefWidth="602.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PrimaryController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="189.0" text="Exchange Money" textAlignment="CENTER" textFill="#1b1a1b">
+         <font>
+            <Font name="Bauhaus 93" size="24.0" />
+         </font></Label>
+      <Pane prefHeight="250.0" prefWidth="562.0">
+         <children>
+            <ImageView fitHeight="558.0" fitWidth="791.0" layoutX="-82.0" layoutY="-144.0" nodeOrientation="INHERIT" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <image>
+                  <Image url="@../../images/money.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="userInput" layoutX="37.0" layoutY="53.0" prefHeight="25.0" prefWidth="508.0" />
+            <Text fontSmoothingType="LCD" layoutX="43.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <Text layoutX="263.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="converted to">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <!-- <TextField /> -->
+            <ComboBox fx:id="currency1" layoutX="37.0" layoutY="90.0" prefWidth="150.0" />
+            <ComboBox fx:id="currency2" layoutX="395.0" layoutY="90.0" prefWidth="150.0" />
+            <Button fx:id="primaryButton" layoutX="253.0" layoutY="142.0" onAction="#currencyConvert" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #B5E61D; -fx-border-radius: 50%; -fx-font-weight: bold;" text="Convert" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Californian FB" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

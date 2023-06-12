@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="477.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.CurrencyConverterController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="775.0" text="Exchange Money" textAlignment="CENTER" textFill="#1b1a1b">
+         <font>
+            <Font name="Bauhaus 93" size="24.0" />
+         </font>
+      </Label>
+      <Pane prefHeight="361.0" prefWidth="682.0">
+         <children>
+            <ImageView fitHeight="511.0" fitWidth="717.0" layoutX="-23.0" layoutY="-48.0" nodeOrientation="INHERIT" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <image>
+                  <Image url="@../../images/money.jpg" />
+               </image>
+            </ImageView>
+            <Text fx:id="value" fontSmoothingType="LCD" layoutX="182.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" textAlignment="CENTER" wrappingWidth="212.83584594726562">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <fill>
+                  <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.4896000027656555" green="0.9599999785423279" blue="0.5049319267272949" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+              <Button fx:id="secondaryButton" layoutX="222.0" layoutY="258.0" onAction="#switchToPrimary" prefHeight="55.0" prefWidth="145.0" style="-fx-background-color: #B5E61D; -fx-border-radius: 50%; -fx-font-weight: bold;" text="Convert Again">
+               <font>
+                  <Font name="Californian FB" size="14.0" />
+               </font>
+            </Button>
+            <Text fx:id="info" layoutX="169.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="240.43324279785156">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
